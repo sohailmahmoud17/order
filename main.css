@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 10px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+main {
+    max-width: 430px;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 10px 20px hsl(224deg 23% 55% / 25%);
+}
+.box img {
+    width: 100%
+} 
+.text h1 {
+    margin: 1.5rem 0 1.5rem 0;
+    color: var(--Dark-blue);
+}
+.text p {
+    font-size: 16px;
+    max-width: 350px;
+    margin: 25px auto;
+    color: var(--Desaturated-blue);
+    line-height: 1.5;
+}
+.year {
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 1rem 2.3rem;
+    border-radius: 0.6rem;
+}
+.year .plan {
+    display: flex;
+}
+.year > .plan > .annual {
+    margin-left: 0.8rem;
+    line-height: 1.5;
+}
+.year > .plan > .annual > p:first-of-type {
+    font-weight: 700;
+}
+.year > .plan > .annual > p:last-of-type {
+    color: var(--Desaturated-blue);
+}
+.year .link > a { 
+    text-decoration: none;
+    color: black;
+}
+.year .link > a:hover {
+    color: var(--Desaturated-blue);
+}
+button:first-of-type {
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    padding: 15px;
+    border: none;
+    overflow: auto;
+    font-weight: 700;
+    width: 80%;
+    border-radius: 0.7rem;
+    margin-top: 0.8rem;
+    box-shadow: 0 10px 30px hsl(245deg 75% 52% / 50%);
+}
+button:first-of-type:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+button:last-of-type {
+    margin: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+button:last-of-type:hover {
+    font-weight: 700;
+} 
